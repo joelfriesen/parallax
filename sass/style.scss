@@ -1,0 +1,70 @@
+/* PARALLAX SCROLLING EXPERIMENT
+   Master Styles
+   Author: Jonathan Nicol (f6design.com)
+*****************************************************************/
+  
+@import "reset";
+@import "buildup";
+
+
+
+    /* Page structure
+*****************************************************************/
+    #paralaxwrapper {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    /* Parallax
+*****************************************************************/
+
+    /* Hill */
+    #parallax-bg3,
+    #parallax-bg2,
+    #parallax-bg1 {
+        position: relative;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        margin-left: -50%;
+    }
+    /* Hill */
+    #parallax-bg3{
+        z-index: 3;
+        #bg3-1 {
+        background: url(../hillcomp.png);
+        background-size: cover;
+        position: absolute;
+        width: inherit;
+        display: block;
+        height: 100vh;
+        top: 125vh;
+        }
+    }
+    /* Mountain */
+    #parallax-bg2 {
+        z-index: 2;
+        #bg2-1 {
+        background: url(../mountaincomp.png);
+        background-size: cover;
+        position: absolute;
+        width: inherit;
+        display: block;
+        height: 100vh;
+        top: 60vh;
+        }
+    }
+    /* Sky */
+    #parallax-bg1 {
+        z-index: 1;
+        #bg1-1 {
+        background: url(../sky.png);
+        background-size: cover;
+        position: absolute;
+        width: inherit;
+        display: block;
+        height: 100vh;
+        }
+    }

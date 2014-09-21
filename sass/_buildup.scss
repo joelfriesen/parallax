@@ -1,0 +1,37 @@
+    /* Extended base styles (site specific)
+*****************************************************************/
+    html {
+        overflow-y: scroll;
+        /* always force a scrollbar in non-IE */
+    }
+    body {
+        background: #555;
+        line-height: 1.5;
+        color: #000;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        color: #000;
+    }
+    a,
+    a:link,
+    a:active,
+    a:visited {
+        -webkit-transition: color 0.25s ease-out;
+        -moz-transition: color 0.25s ease-out;
+        -o-transition: color 0.25s ease-out;
+        transition: color 0.25s ease-out;
+        color: #21a97e;
+        outline: none;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #000;
+    }
+    img {
+        display: block;
+    }
+    p {
+        margin: 1em 0;
+    }
